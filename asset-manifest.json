@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/beautyatluxx/static/css/main.f4acacde.chunk.css",
+    "main.js": "/beautyatluxx/static/js/main.c47911ef.chunk.js",
+    "main.js.map": "/beautyatluxx/static/js/main.c47911ef.chunk.js.map",
+    "runtime-main.js": "/beautyatluxx/static/js/runtime-main.364e8e96.js",
+    "runtime-main.js.map": "/beautyatluxx/static/js/runtime-main.364e8e96.js.map",
+    "static/js/2.8738aa1d.chunk.js": "/beautyatluxx/static/js/2.8738aa1d.chunk.js",
+    "static/js/2.8738aa1d.chunk.js.map": "/beautyatluxx/static/js/2.8738aa1d.chunk.js.map",
+    "index.html": "/beautyatluxx/index.html",
+    "precache-manifest.3605254c7dc05959a0d4c424097bb3b0.js": "/beautyatluxx/precache-manifest.3605254c7dc05959a0d4c424097bb3b0.js",
+    "service-worker.js": "/beautyatluxx/service-worker.js",
+    "static/css/main.f4acacde.chunk.css.map": "/beautyatluxx/static/css/main.f4acacde.chunk.css.map",
+    "static/js/2.8738aa1d.chunk.js.LICENSE.txt": "/beautyatluxx/static/js/2.8738aa1d.chunk.js.LICENSE.txt",
+    "static/media/banner_01.jpeg": "/beautyatluxx/static/media/banner_01.a50d9ec0.jpeg",
+    "static/media/banner_02.jpeg": "/beautyatluxx/static/media/banner_02.f80c4d13.jpeg",
+    "static/media/banner_03.jpeg": "/beautyatluxx/static/media/banner_03.968a831f.jpeg",
+    "static/media/body.png": "/beautyatluxx/static/media/body.efc57384.png",
+    "static/media/image2.jpeg": "/beautyatluxx/static/media/image2.a54142f4.jpeg",
+    "static/media/image3.jpeg": "/beautyatluxx/static/media/image3.a7e9d560.jpeg",
+    "static/media/image4.jpeg": "/beautyatluxx/static/media/image4.7908d9e7.jpeg",
+    "static/media/image5.jpeg": "/beautyatluxx/static/media/image5.ab518e63.jpeg",
+    "static/media/image6.jpeg": "/beautyatluxx/static/media/image6.93d2b1e4.jpeg",
+    "static/media/logo.png": "/beautyatluxx/static/media/logo.a5e2c948.png",
+    "static/media/makeup.png": "/beautyatluxx/static/media/makeup.6d1d525e.png",
+    "static/media/massage.png": "/beautyatluxx/static/media/massage.5a4812b8.png",
+    "static/media/nails.png": "/beautyatluxx/static/media/nails.7cd24564.png",
+    "static/media/salon.jpeg": "/beautyatluxx/static/media/salon.1f9961ea.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.364e8e96.js",
+    "static/js/2.8738aa1d.chunk.js",
+    "static/css/main.f4acacde.chunk.css",
+    "static/js/main.c47911ef.chunk.js"
+  ]
+}
