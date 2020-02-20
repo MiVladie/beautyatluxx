@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/beautyatluxx/static/css/main.f4acacde.chunk.css",
-    "main.js": "/beautyatluxx/static/js/main.431837f3.chunk.js",
-    "main.js.map": "/beautyatluxx/static/js/main.431837f3.chunk.js.map",
+    "main.js": "/beautyatluxx/static/js/main.1a511329.chunk.js",
+    "main.js.map": "/beautyatluxx/static/js/main.1a511329.chunk.js.map",
     "runtime-main.js": "/beautyatluxx/static/js/runtime-main.364e8e96.js",
     "runtime-main.js.map": "/beautyatluxx/static/js/runtime-main.364e8e96.js.map",
     "static/js/2.8738aa1d.chunk.js": "/beautyatluxx/static/js/2.8738aa1d.chunk.js",
     "static/js/2.8738aa1d.chunk.js.map": "/beautyatluxx/static/js/2.8738aa1d.chunk.js.map",
     "index.html": "/beautyatluxx/index.html",
-    "precache-manifest.dd216cc5881ff3a1d97f58c18b666226.js": "/beautyatluxx/precache-manifest.dd216cc5881ff3a1d97f58c18b666226.js",
+    "precache-manifest.5cadc67dba27ae23bbbe544ddccc82e4.js": "/beautyatluxx/precache-manifest.5cadc67dba27ae23bbbe544ddccc82e4.js",
     "service-worker.js": "/beautyatluxx/service-worker.js",
     "static/css/main.f4acacde.chunk.css.map": "/beautyatluxx/static/css/main.f4acacde.chunk.css.map",
     "static/js/2.8738aa1d.chunk.js.LICENSE.txt": "/beautyatluxx/static/js/2.8738aa1d.chunk.js.LICENSE.txt",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.364e8e96.js",
     "static/js/2.8738aa1d.chunk.js",
     "static/css/main.f4acacde.chunk.css",
-    "static/js/main.431837f3.chunk.js"
+    "static/js/main.1a511329.chunk.js"
   ]
 }
