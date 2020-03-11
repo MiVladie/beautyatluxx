@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/beautyatluxx/static/css/main.46e70b03.chunk.css",
-    "main.js": "/beautyatluxx/static/js/main.84303bab.chunk.js",
-    "main.js.map": "/beautyatluxx/static/js/main.84303bab.chunk.js.map",
+    "main.css": "/beautyatluxx/static/css/main.96aafe74.chunk.css",
+    "main.js": "/beautyatluxx/static/js/main.71481d91.chunk.js",
+    "main.js.map": "/beautyatluxx/static/js/main.71481d91.chunk.js.map",
     "runtime-main.js": "/beautyatluxx/static/js/runtime-main.364e8e96.js",
     "runtime-main.js.map": "/beautyatluxx/static/js/runtime-main.364e8e96.js.map",
-    "static/js/2.036caf71.chunk.js": "/beautyatluxx/static/js/2.036caf71.chunk.js",
-    "static/js/2.036caf71.chunk.js.map": "/beautyatluxx/static/js/2.036caf71.chunk.js.map",
+    "static/js/2.d26f014b.chunk.js": "/beautyatluxx/static/js/2.d26f014b.chunk.js",
+    "static/js/2.d26f014b.chunk.js.map": "/beautyatluxx/static/js/2.d26f014b.chunk.js.map",
     "index.html": "/beautyatluxx/index.html",
-    "precache-manifest.0997b428f35d4ebc2e62b17bfd0e9441.js": "/beautyatluxx/precache-manifest.0997b428f35d4ebc2e62b17bfd0e9441.js",
+    "precache-manifest.9f9f31b6371ca38c093aacd30ac74bef.js": "/beautyatluxx/precache-manifest.9f9f31b6371ca38c093aacd30ac74bef.js",
     "service-worker.js": "/beautyatluxx/service-worker.js",
-    "static/css/main.46e70b03.chunk.css.map": "/beautyatluxx/static/css/main.46e70b03.chunk.css.map",
-    "static/js/2.036caf71.chunk.js.LICENSE.txt": "/beautyatluxx/static/js/2.036caf71.chunk.js.LICENSE.txt",
+    "static/css/main.96aafe74.chunk.css.map": "/beautyatluxx/static/css/main.96aafe74.chunk.css.map",
+    "static/js/2.d26f014b.chunk.js.LICENSE.txt": "/beautyatluxx/static/js/2.d26f014b.chunk.js.LICENSE.txt",
     "static/media/banner_01.jpeg": "/beautyatluxx/static/media/banner_01.a50d9ec0.jpeg",
     "static/media/banner_02.jpeg": "/beautyatluxx/static/media/banner_02.f80c4d13.jpeg",
     "static/media/banner_03.jpeg": "/beautyatluxx/static/media/banner_03.968a831f.jpeg",
@@ -30,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.364e8e96.js",
-    "static/js/2.036caf71.chunk.js",
-    "static/css/main.46e70b03.chunk.css",
-    "static/js/main.84303bab.chunk.js"
+    "static/js/2.d26f014b.chunk.js",
+    "static/css/main.96aafe74.chunk.css",
+    "static/js/main.71481d91.chunk.js"
   ]
 }
