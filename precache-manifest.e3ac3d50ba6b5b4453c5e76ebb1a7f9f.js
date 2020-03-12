@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2c49283e88c3019e24338fcd4326403",
+    "revision": "5ee007f426615dbb30cc8af92f9e1d4c",
     "url": "/beautyatluxx/index.html"
   },
   {
-    "revision": "a02d8972ec016a8a4a9e",
+    "revision": "a396a170d6544cdc65ee",
     "url": "/beautyatluxx/static/css/main.ea023206.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/beautyatluxx/static/js/2.214fa822.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a02d8972ec016a8a4a9e",
-    "url": "/beautyatluxx/static/js/main.f869fadd.chunk.js"
+    "revision": "a396a170d6544cdc65ee",
+    "url": "/beautyatluxx/static/js/main.51e2e2fc.chunk.js"
   },
   {
     "revision": "1d61088f60b202d06df7",
