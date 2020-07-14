@@ -1,0 +1,119 @@
+$eunry2: #6D0E2A;
+$eunry3: #A28282;
+$dark1: #444444;
+
+.Auth {
+    width: 90%;
+    margin: 0 auto;
+
+    position: relative;
+
+    .Modal {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background-color: rgba(255, 255, 255, 0.75);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Input {
+        width: 90%;
+
+        margin: 0.75em 0;
+        padding: 0.75em 5%;
+
+        border: 1px solid #E1E1E1;
+        border-radius: 25px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Field {
+            width: 100%;
+
+            border: none;
+            
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+    }
+
+    .Result {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+
+        text-align: center;
+        
+        margin: 1em 0 1.5em;
+        
+        color: $dark1;
+    }
+
+    .Send {
+        width: 100%;
+        height: 3.25em;
+
+        margin: 1em 0 2em;
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9em;
+
+        text-transform: uppercase;
+        color: white;
+
+        background-color: $eunry3;
+        border-radius: 25px;
+
+        border: none;
+
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: darken($eunry3, 10);
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Auth {
+        width: 50vw;
+        
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+        .Send {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1025px) {    
+    .Auth {
+        width: 35vw;
+        margin: 1em auto;
+
+        .Input {
+            .Field {
+                font-size: 1.125em;
+            }
+        }
+
+        .Result {
+            font-size: 1.1em;
+            margin: 1em 0 0 1em;
+        }
+
+        .Send {
+            margin: 1.5em auto 0;
+            font-size: 1em;
+        }
+    }
+}

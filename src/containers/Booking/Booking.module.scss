@@ -1,0 +1,104 @@
+$eunry1: #D6BCBC;
+$eunry2: #6D0E2A;
+$eunry3: #A28282;
+$dark1: #444444;
+$dark2: #616161;
+
+.Booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 500;
+    
+    .Modal {
+        position: fixed;
+    
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        z-index: 500;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .Console {
+        width: 90%;
+        padding-bottom: 1em;
+
+        z-index: 600;
+
+        background-color: white;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        .Content {
+            width: 90%;
+            min-height: 50vh;
+
+            position: relative;
+
+            .LoadingWrapper {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: rgba(255, 255, 255, 0.75);
+            }
+        }
+
+        .Error {
+            padding: 1em 0;
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25em;
+
+            color: $dark1;
+        }
+    }
+}
+
+@media(min-width: 720px) {
+    .Booking {
+        .Console {
+            width: auto;
+            padding: 0 2em 2em;
+
+            .Content {
+                min-width: 55vw;
+            }
+        }
+    }
+}
+
+@media(min-width: 1025px) {
+    .Booking {
+        .Console {
+            min-width: 25em;
+            padding: 0 2em 2em;
+
+            .Content {
+                min-width: 25vw;
+            }
+        }
+    }
+}

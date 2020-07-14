@@ -1,0 +1,93 @@
+$dark1: #444444;
+
+.Footer {
+    width: 100%;
+
+    padding: 0.5em 0;
+
+    background-color: white;
+
+    .Wrapper {
+        width: 90%;
+
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-flow: column;
+
+        text-align: center;
+        
+        .Logo {
+            display: none;
+        }
+
+        .Content {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9em;
+            
+            line-height: 1.5em;
+            color: $dark1;
+
+            span {
+                a {
+                    color: $dark1;
+                    outline: none;
+                }
+            }
+        }
+
+        .Admin {
+            background: none;
+            border: none;
+            outline: none;
+
+            text-decoration: underline;
+
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9em;
+
+            color: $dark1;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Footer {
+        padding: 0.75em 0;
+
+        .Wrapper {
+            .Content {
+                p {
+                    .Break {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Footer {
+        .Wrapper {
+            width: 70%;
+
+            justify-content: space-between;
+            flex-flow: row;
+
+            .Logo {
+                display: block;
+
+                width: 5em;
+                height: 3em;
+
+                object-fit: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

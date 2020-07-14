@@ -1,0 +1,22 @@
+.StripeElement {
+  width: 100%;
+  height: 30px;
+  color: #32325d;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.__PrivateStripeElement {
+  width: 100%;
+}

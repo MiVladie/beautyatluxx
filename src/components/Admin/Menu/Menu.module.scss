@@ -1,0 +1,98 @@
+$dark2: #616161;
+
+.Menu {
+    width: 90%;
+    margin: 0 auto;
+
+    .Wrapper {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .Box {
+            width: 35vw;
+            height: 35vw;
+
+            margin: 0.5em;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+
+            border-radius: 33px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+
+            transition: all 0.3s;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken(white, 4);
+            }
+
+            .Icon {
+                width: 40%;
+                height: 40%;
+
+                object-fit: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .Name {
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.8em;
+
+                color: $dark2;
+
+                text-align: center;
+
+                width: 100%;
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 10%;
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Menu {
+        width: 50vw;
+
+        .Wrapper {
+            .Box {
+                margin: 1em;
+
+                width: 20vw;
+                height: 20vw;
+
+                .Name {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Menu {
+        width: auto;
+        max-width: 25vw;
+
+        .Wrapper {
+            .Box {
+                margin: 1em;
+
+                width: 10vw;
+                height: 10vw;
+            }
+        }
+    }
+}

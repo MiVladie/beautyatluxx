@@ -1,0 +1,59 @@
+.Admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 500;
+    
+    .Modal {
+        position: fixed;
+    
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        z-index: 500;
+    
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .Console {
+        width: 90%;
+        padding-bottom: 2.5em;
+
+        z-index: 600;
+
+        background-color: white;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+}
+
+@media(min-width: 720px) {
+    .Admin {
+        .Console {
+            width: auto;
+            padding: 0 2em 2em;
+        }
+    }
+}
+
+@media(min-width: 1025px) {
+    .Admin {
+        .Console {
+            padding: 0 4em 2em;
+        }
+    }
+}

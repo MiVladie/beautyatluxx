@@ -1,0 +1,104 @@
+.Summary {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 2em 0;
+}
+
+.Summary .Block {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+}
+
+.Summary .Block:nth-child(2) {
+  margin: 2em 0;
+}
+
+.Summary .Block .Name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.Summary .Block .Line {
+  width: 4em;
+  height: 2px;
+  background-color: #A28282;
+  margin: 1em 0 1.35em;
+}
+
+.Summary .Block .Content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #616161;
+}
+
+.Summary .Block .Content span {
+  font-weight: 400;
+}
+
+@media (min-width: 720px) {
+  .Summary {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .Summary .Block {
+    width: 28%;
+    margin: 0 1em;
+    font-size: 0.8em;
+  }
+  .Summary .Block:nth-child(2) {
+    margin: 0 1em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Summary {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 3em 0;
+  }
+  .Summary .Block {
+    width: 20%;
+    margin: 0 7vw;
+    font-size: 0.9em;
+  }
+}
+/*# sourceMappingURL=Summary.module.css.map */

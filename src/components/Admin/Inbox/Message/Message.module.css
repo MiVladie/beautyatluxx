@@ -1,0 +1,103 @@
+.Message {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Message .Description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.75em;
+}
+
+.Message .Description .Name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25em;
+  color: #444444;
+  width: 100%;
+  margin-right: 0.25em;
+}
+
+.Message .Description .Name .Text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  color: #616161;
+}
+
+.Message .Button {
+  width: 100%;
+  height: 3em;
+  border: none;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #6D0E2A;
+  border-radius: 30px;
+  margin-bottom: 0.75em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Message .Action .Button:nth-child(1), .Message .Response .Button:nth-child(1) {
+  border: 1px solid #6D0E2A;
+}
+
+.Message .Action .Button:nth-child(1):hover, .Message .Response .Button:nth-child(1):hover {
+  background-color: #F5F5F5;
+}
+
+.Message .Action .Button:nth-child(2) {
+  background-color: #6D0E2A;
+  color: white;
+}
+
+.Message .Action .Button:nth-child(2):hover {
+  background-color: #560b21;
+}
+
+.Message .Response .Button:nth-child(2) {
+  background-color: #A28282;
+  color: white;
+}
+
+.Message .Response .Button:nth-child(2):hover {
+  background-color: #8a6767;
+}
+
+@media (min-width: 720px) {
+  .Message .Row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Message .Row .Description {
+    width: 50%;
+  }
+  .Message .Row .Button {
+    width: 49%;
+  }
+  .Message .Description .Name .Text {
+    line-height: 1.25em;
+  }
+  .Message .Action {
+    padding-top: 1em;
+  }
+  .Message .Response {
+    padding-bottom: 1em;
+  }
+}
+/*# sourceMappingURL=Message.module.css.map */

@@ -1,0 +1,113 @@
+$eunry2: #6D0E2A;
+$eunry3: #A28282;
+$dark1: #444444;
+
+.Form {
+    width: 100%;
+    margin: 0.5em 0;
+
+    position: relative;
+
+    .Modal {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background-color: rgba(255, 255, 255, 0.75);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Input {
+        width: 90%;
+
+        margin: 0.75em 0;
+        padding: 0.75em 5%;
+
+        border: 1px solid #E1E1E1;
+        border-radius: 25px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Field {
+            width: 100%;
+
+            border: none;
+            
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+    }
+    
+    .Textarea {
+        min-height: 8em;
+        resize: none;
+    }
+
+    .Result {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+
+        margin: 1em 0 1.5em;
+        
+        color: $dark1;
+    }
+
+    .Send {
+        width: 50%;
+        height: 3.25em;
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9em;
+
+        text-transform: uppercase;
+        color: white;
+
+        background-color: $eunry3;
+        border-radius: 25px;
+
+        border: none;
+
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: darken($eunry3, 10);
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Form {
+        .Send {
+            width: 35%;
+        }
+    }
+}
+
+@media (min-width: 1025px) {    
+    .Form {
+        margin: 1em 0;
+
+        .Input {
+            .Field {
+                font-size: 1.125em;
+            }
+        }
+
+        .Result {
+            font-size: 1.1em;
+            margin: 1em 0 0 1em;
+        }
+
+        .Send {
+            margin-top: 1.5em;
+            font-size: 1em;
+        }
+    }
+}

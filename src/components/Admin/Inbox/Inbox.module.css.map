@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;EAEd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,MAAM,CAAC;IACH,KAAK,EAAE,IAAI;GACd;;;AAGL,MAAM,EAAE,SAAS,EAAE,MAAM;EACrB,AAAA,MAAM,CAAC;IACH,KAAK,EAAE,IAAI;GACd",
+    "sources": [
+        "Inbox.module.scss"
+    ],
+    "names": [],
+    "file": "Inbox.module.css"
+}

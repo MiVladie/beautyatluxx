@@ -1,0 +1,90 @@
+.Menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Menu .Wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Menu .Wrapper .Box {
+  width: 35vw;
+  height: 35vw;
+  margin: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 33px;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.Menu .Wrapper .Box:hover {
+  background-color: whitesmoke;
+}
+
+.Menu .Wrapper .Box .Icon {
+  width: 40%;
+  height: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Menu .Wrapper .Box .Name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  color: #616161;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+}
+
+@media (min-width: 720px) {
+  .Menu {
+    width: 50vw;
+  }
+  .Menu .Wrapper .Box {
+    margin: 1em;
+    width: 20vw;
+    height: 20vw;
+  }
+  .Menu .Wrapper .Box .Name {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Menu {
+    width: auto;
+    max-width: 25vw;
+  }
+  .Menu .Wrapper .Box {
+    margin: 1em;
+    width: 10vw;
+    height: 10vw;
+  }
+}
+/*# sourceMappingURL=Menu.module.css.map */

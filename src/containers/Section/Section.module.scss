@@ -1,0 +1,78 @@
+$grey: #444444;
+$eunry2: #6D0E2A;
+$grey2: #616161;
+$eunry3: #A28282;
+
+.Section {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    .Main {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+        margin: 2em 0;
+
+        font-size: 1em;
+
+        .Meta {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.75em;
+
+            color: $eunry3;
+        }
+
+        .Name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+
+            text-transform: uppercase;
+
+            margin: 0.5em 0;
+
+            color: $eunry2;
+        }
+
+        .Line {
+            background-image: url('../../assets/icons/line.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 80%;
+            height: 0.5em;
+
+            margin: 0.5em 0 2em;
+        }
+
+        .Description {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+
+            width: 90%;
+            
+            text-align: center;
+            line-height: 1.65em;
+
+            color: $grey2;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Section {
+        .Main {
+            font-size: 1em;
+
+            .Description {
+                width: 65%;
+                line-height: 1.75em;
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+$dark1: #444444;
+
+.Testimonials {
+    width: 100%;
+
+    .Wrapper {
+        width: 96vw;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .Arrow {
+            width: 2.25em;
+            height: 2.25em;
+
+            background-color: white;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            &:first-child {
+                transform: rotateZ(90deg);
+            }
+            
+            &:last-child {
+                transform: rotateZ(-90deg);
+            }
+
+            img {
+                width: 35%;
+                height: 35%;
+
+                object-fit: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .Review {
+            width: 75%;
+
+            padding: 2em 0;
+
+            background-color: white;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            transition: all 0.3s;
+
+            .Container {
+                width: 90%;
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                
+                text-align: center;
+
+                .Name {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.25em;
+                    color: $dark1;
+                }
+
+                .Text {
+                    margin: 1em 0;
+
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.8em;
+                    font-weight: 300;
+
+                    line-height: 1.5em;
+                    color: $dark1;
+                }
+
+                .Stars {
+                    display: flex;
+
+                    .Star {
+                        width: 1.5em;
+                        height: 1.5em;
+
+                        margin: 0 0.2em;
+
+                        object-fit: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+
+        .Active {
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Testimonials {
+        .Wrapper {
+            width: 75vw; 
+            
+            .Arrow {
+                width: 2.75em;
+                height: 2.75em;
+            }
+
+            .Review {
+                width: 70%;
+                
+                .Container {
+                    font-size: 1.35em;
+
+                    .Text {
+                        width: 90%;
+                        line-height: 1.5em;
+                        margin: 1.5em 0;
+                    }
+
+                    .Stars {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Testimonials {
+        .Wrapper {
+            justify-content: center;
+            padding: 2em 0;
+
+            .Arrow {
+                display: none;
+            }
+
+            .Review {
+                width: 25%;
+                min-width: 22vw;
+                min-height: 35vh;
+                display: flex;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &:nth-child(2n) {
+                    margin: 0 3.5em;
+                }
+
+                .Container {
+                    font-size: 1em;
+                }
+            }
+
+            .Active {
+                transform: scale(1.15);
+                
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+}

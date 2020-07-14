@@ -1,0 +1,134 @@
+$grey: #444444;
+$lightGrey: #616161;
+$borderGrey: rgba(0, 0, 0, 0.05);
+
+.About {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+
+    .Services {
+        display: flex;
+        flex-flow: column;
+
+        .Service {
+            background-color: white;
+
+            padding: 2em 0;
+
+            border-top: 1px solid $borderGrey;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            text-align: center;
+
+            transition: all 0.3s;
+
+            &:last-child {
+                border-bottom: 1px solid $borderGrey;
+            }
+
+            &:hover {
+                background-color: #D6BCBC;
+            }
+
+            .Icon {
+                height: 4em;
+                width: 4em;
+
+                background-repeat: no-repeat;
+                object-fit: contain;
+
+                border-radius: 50%;
+            }
+
+            .Name {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.35em;
+
+                color: $grey;
+
+                margin: 1em 0;
+            }
+
+            .Description {
+                width: 95%;
+
+                font-family: 'Poppins', sans-serif;
+                font-size: 1em;
+                font-weight: 300;
+
+                line-height: 1.35em;
+
+                color: $lightGrey;
+            }
+        }
+    }
+    
+    .Image {
+        width: 100%;
+        height: 16em;
+
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 720px) {
+    .About {
+        .Services {
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .Service {
+                min-width: calc(50% - 1px);
+                height: 20vw;
+
+                flex: 0 1;
+
+                padding: 3em 0;
+
+                border-right: 1px solid $borderGrey;
+
+                &:nth-child(2n) {                  
+                    border-right: none;  
+                }
+
+                .Icon {
+                    height: 6em;
+                    width: 6em;
+                }
+            }
+        }
+
+        .Image {
+            height: 40%;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .About {
+        flex-flow: row;
+
+        .Services {
+            width: 50%;
+            height: 70vh;
+
+            .Service {
+                padding: 0;
+                height: auto;
+            }
+        }
+
+        .Image {
+            width: 50%;
+            height: 70vh;
+        }
+    }
+}

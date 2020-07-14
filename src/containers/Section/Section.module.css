@@ -1,0 +1,73 @@
+.Section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Section .Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 2em 0;
+  font-size: 1em;
+}
+
+.Section .Main .Meta {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.75em;
+  color: #A28282;
+}
+
+.Section .Main .Name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+  color: #6D0E2A;
+}
+
+.Section .Main .Line {
+  background-image: url("../../assets/icons/line.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 0.5em;
+  margin: 0.5em 0 2em;
+}
+
+.Section .Main .Description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  width: 90%;
+  text-align: center;
+  line-height: 1.65em;
+  color: #616161;
+}
+
+@media (min-width: 1025px) {
+  .Section .Main {
+    font-size: 1em;
+  }
+  .Section .Main .Description {
+    width: 65%;
+    line-height: 1.75em;
+  }
+}
+/*# sourceMappingURL=Section.module.css.map */

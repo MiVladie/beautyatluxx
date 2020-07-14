@@ -1,0 +1,352 @@
+$eunry1: #D6BCBC;
+$eunry2: #6D0E2A;
+$eunry3: #A28282;
+$dark1: #444444;
+$dark2: #616161;
+
+.Banner {
+    width: 100%;
+    height: calc(100vh - 4em);
+
+    margin-top: 4em;
+
+    .Main {
+        width: 100%;
+        height: calc(100vh - 4em - 3vh);
+
+        background-color: $eunry1;
+
+        .Holder {
+            display: flex;
+            flex-flow: column-reverse;
+            
+            width: 100%;
+
+            .Text {
+                width: 90%;
+                margin: 0 auto;
+
+                h2 {
+                    font-family: 'Satisfy', cursive;
+                    font-size: 6vh;
+                    color: white;
+                }
+    
+                h1 {
+                    font-family: 'Suranna', serif;
+                    font-size: 7vh;
+                    text-transform: uppercase;
+                    color: $dark1;
+                }
+    
+                .Line {
+                    width: 4em;
+                    height: 3px;
+
+                    margin: 2.5vh 0;
+
+                    background-color: white;
+                }
+    
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 4vw;
+
+                    line-height: 1.5em;
+
+                    margin-bottom: 1.5em;
+
+                    color: $dark2;
+                }
+
+                a {
+                    display: block;
+
+                    width: 11em;
+                    height: 3.5em;
+
+                    line-height: 3.5em;
+
+                    font-size: 0.8em;
+                    font-family: 'Poppins', sans-serif;
+
+                    box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+
+                    color: $eunry2;
+                    
+                    text-align: center;
+                    text-decoration: none;
+
+                    background-color: white;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: $eunry3;
+                        color: white;
+                    }
+                }
+            }
+            
+            .Images {
+                width: 100%;
+                margin-bottom: 2.5vh;
+
+                .Image {
+                    display: none;
+
+                    width: 100%;
+                    height: 40vh;
+
+                    object-fit: cover;
+
+                    transition: all 0.3s;
+                }
+
+                .Active {
+                    display: block;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        
+        .Dots {
+            display: none;
+        }
+    }
+    
+    .Scroll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 6vh;
+        height: 6vh;
+
+        margin: -3vh auto 0;
+
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
+
+        background-color: white;
+
+        transition: all 0.3s;
+        
+        &:hover {
+            background-color: $eunry3;
+            color: white;
+
+            .Arrow {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .Arrow {
+            height: 40%;
+            width: 40%;
+
+            background-image: url('../../assets/icons/scroll.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            transition: all 0.3s;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Banner {
+        height: auto;
+        margin-top: 5em;
+
+        .Main {
+            height: auto;
+            padding: 3.5em 0;
+
+            display: flex;
+            align-items: center;
+
+            .Holder {
+                width: 90%;
+                margin: 0 auto;
+                flex-flow: row;
+                justify-content: space-between;
+
+                .Text {
+                    width: 45vw;
+                    height: 45vw;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    h2 {
+                        font-size: 6vw;
+                        margin: 0;
+                    }
+
+                    h1 {
+                        font-size: 7.75vw;
+                        margin: 0;
+                    }
+
+                    .Line {
+                        margin: 1.5vh 0;
+                    }
+
+                    p {
+                        font-size: 2vw;
+                        margin: 0 0 0.5em;
+                        width: 87.5%;
+                    }
+                }
+
+                .Images {
+                    width: 45vw; 
+                    height: 45vw;
+
+                    margin: 0;
+
+                    position: relative;
+
+                    .Image {
+                        display: block;
+
+                        filter: brightness(0.5);
+
+                        width: 42.5vw;
+                        height: 42.5vw;
+
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    .Active {
+                        top: 0;
+                        right: 0;
+                        bottom: auto;
+                        left: auto;
+                        
+                        box-shadow: 0 2px 44px rgba(0, 0, 0, 0.16);
+
+                        z-index: 100;
+
+                        filter: none;
+                    }
+                    
+                    .Hidden {
+                        display: none;
+                    }
+                }
+            }
+
+            .Dots {
+                display: block;
+                position: absolute;
+
+                right: 0;   
+
+                .Dot {
+                    width: 0.75em;
+                    height: 0.75em;
+
+                    margin: 5px 1.75vw 5px 0;
+
+                    background-color: white;
+
+                    border-radius: 50%;
+
+                    cursor: pointer;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: #A28282;
+                    }
+                }
+
+                .Active {
+                    background-color: $eunry2;
+                    
+                    &:hover {
+                        background-color: $eunry2;
+                    }
+                }
+            }
+        }
+
+        .Scroll {            
+            width: 5vh;
+            height: 5vh;
+
+            margin: -2.5vh auto 0;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Banner {
+        height: calc(100vh - 5em);
+
+        .Main {
+            height: calc(100vh - 5em - 4vh);
+            padding: 0;
+
+            .Holder {
+                width: 85%;
+                height: 80%;
+
+                margin: 0 auto; 
+
+                .Text {
+                    height: 100%;
+                    width: calc(100vw - (100% - 30%));
+
+                    margin: 0;
+
+                    h2 {
+                        font-size: 6vw;
+                    }
+
+                    h1 {
+                        font-size: 7vw;
+                    }
+
+                    .Line {
+                        width: 5em;
+                        height: 4px;
+                        margin: 1.5vh 0;
+                    }
+
+                    p {
+                        font-size: 1.25em;
+                        margin: 0 0 0.5em;
+                        width: 90%;
+                    }
+
+                    a {
+                        font-size: 1em;
+                    }
+                }
+
+                .Images {
+                    width: 40vw;
+                    height: 40vw;
+
+                    max-width: calc((100vh - 5em - 4vh) * 0.8);
+                    max-height: 100%;
+
+                    .Image {
+                        height: 90%;
+                        width: 90%;
+                    }
+                }                
+            }
+        }
+
+        .Scroll {            
+            width: 6.5vh;
+            height: 6.5vh;             
+        }
+    }
+}

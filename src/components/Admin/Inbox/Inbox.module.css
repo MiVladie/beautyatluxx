@@ -1,0 +1,26 @@
+.Inbox {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 720px) {
+  .Inbox {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Inbox {
+    width: 60vw;
+  }
+}
+/*# sourceMappingURL=Inbox.module.css.map */

@@ -1,0 +1,133 @@
+$eunry1: #D6BCBC;
+$eunry2: #6D0E2A;
+$eunry3: #A28282;
+$dark1: #444444;
+$dark2: #616161;
+
+.Message {
+    width: 100%;
+    margin: 0 auto;
+
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .Description {
+        display: flex;
+
+        margin-bottom: 0.75em;
+        
+        .Name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25em;
+            color: $dark1;
+
+            width: 100%;
+            margin-right: 0.25em;
+                
+            .Text {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+                font-size: 0.9em;
+
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                hyphens: auto;
+                color: $dark2;
+            }
+        }
+    }
+
+    .Button {
+        width: 100%;
+        height: 3em;
+
+        border: none;
+        background: none;
+
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        color: $eunry2;
+
+        border-radius: 30px;
+
+        margin-bottom: 0.75em;
+
+        transition: all 0.3s;
+    }
+
+    .Action, .Response {
+        .Button {       
+            &:nth-child(1) {
+                border: 1px solid $eunry2;
+                
+                &:hover {
+                    background-color: #F5F5F5;
+                }
+            }
+        }
+    }
+
+    .Action {
+        .Button {
+            &:nth-child(2) {
+                background-color: $eunry2;
+                color: white;
+
+                &:hover {
+                    background-color: darken($eunry2, 5);
+                }
+            }
+        }
+    }
+    
+    .Response {
+        .Button {
+            &:nth-child(2) {
+                background-color: $eunry3;
+                color: white;
+                
+                &:hover {
+                    background-color: darken($eunry3, 10);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Message {
+        .Row {
+            display: flex;
+            justify-content: space-between;
+
+            .Description {
+                width: 50%;
+            }
+
+            .Button {
+                width: 49%;
+            }
+        }
+
+        .Description {
+            .Name {
+                .Text {
+                    line-height: 1.25em;
+                }
+            }
+        }
+
+        .Action {
+            padding-top: 1em;
+        }
+
+        .Response {
+            padding-bottom: 1em;
+        }
+    }
+}
+

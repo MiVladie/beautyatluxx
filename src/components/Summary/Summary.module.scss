@@ -1,0 +1,96 @@
+$eunry3: #A28282;
+$dark1: #444444;
+$dark2: #616161;
+
+.Summary {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    padding: 2em 0;
+
+    .Block {
+        width: 85%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        text-align: center;
+
+        &:nth-child(2) {
+            margin: 2em 0;
+        }
+
+        .Name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            
+            text-transform: uppercase;
+
+            color: $dark1;
+        }
+
+        .Line {
+            width: 4em;
+            height: 2px;
+
+            background-color: $eunry3;
+
+            margin: 1em 0 1.35em;
+        }
+
+        .Content {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+
+            line-height: 1.5em;
+
+            color: $dark2;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Summary {
+        flex-flow: row;
+        align-items: flex-start;
+
+        .Block {
+            width: 28%;
+            margin: 0 1em;
+
+            font-size: 0.8em;
+
+            &:nth-child(2) {
+                margin: 0 1em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Summary {
+        flex-flow: row;
+        align-items: flex-start;
+
+        padding: 3em 0;
+
+        .Block {
+            width: 20%;
+            margin: 0 7vw;
+
+            font-size: 0.9em;
+        }
+    }
+}
+

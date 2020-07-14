@@ -1,0 +1,147 @@
+.Preview {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Preview .Meta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.Preview .Meta .Description {
+  width: 50%;
+  margin-left: 0.75em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: #444444;
+}
+
+.Preview .Meta .Description:nth-child(2n) {
+  display: none;
+}
+
+.Preview .Messages {
+  width: 100%;
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Preview .Messages .Message {
+  height: 3em;
+  margin-bottom: 0.75em;
+  border-radius: 50px;
+  border: 0.5px solid #E1E1E1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Preview .Messages .Message:nth-child(2n) {
+  background-color: #F5F5F5;
+}
+
+.Preview .Messages .Message:hover {
+  -webkit-box-shadow: 0px 0 8px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0 8px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.Preview .Messages .Message .Info {
+  width: 50%;
+}
+
+.Preview .Messages .Message .Info:nth-child(1) .Text {
+  border: none;
+  margin-left: 0.5em;
+}
+
+.Preview .Messages .Message .Info .Text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-overflow: ellipsis;
+  color: #616161;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+  padding: 0.5em 0 0.5em 0.75em;
+  border-left: 0.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.Preview .Messages .Message .Info:nth-child(2n) {
+  display: none;
+}
+
+.Preview .Total, .Preview .Back {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: #444444;
+  margin: 0.5em 0 0 0.75em;
+}
+
+.Preview .Back {
+  margin-top: 0;
+  padding-bottom: 1em;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Empty {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #444444;
+}
+
+@media (min-width: 720px) {
+  .Preview .Meta .Description {
+    width: 33%;
+  }
+  .Preview .Meta .Description:nth-child(4) {
+    display: block;
+  }
+  .Preview .Messages .Message .Info {
+    width: 33%;
+  }
+  .Preview .Messages .Message .Info:nth-child(4) {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Preview .Meta .Description {
+    width: 25%;
+  }
+  .Preview .Meta .Description:nth-child(2) {
+    display: block;
+  }
+  .Preview .Messages .Message {
+    height: 4em;
+  }
+  .Preview .Messages .Message .Info {
+    width: 25%;
+  }
+  .Preview .Messages .Message .Info:nth-child(2) {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Preview.module.css.map */

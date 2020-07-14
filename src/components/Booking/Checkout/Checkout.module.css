@@ -1,0 +1,225 @@
+.Checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.Checkout .Main {
+  width: 100%;
+}
+
+.Checkout .Main .Meta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.Checkout .Main .Meta .Text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.35em;
+  color: #444444;
+}
+
+.Checkout .Main .Line {
+  width: 100%;
+  height: 1px;
+  background-color: #E0E0E0;
+  margin: 1em 0;
+}
+
+.Checkout .Main .Schedule {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Checkout .Main .Schedule .Time {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.35em;
+  font-weight: 300;
+  color: #A28282;
+}
+
+.Checkout .Main .Schedule .Separation {
+  width: 1px;
+  height: 2.35em;
+  margin: 0 0.75em;
+  background-color: #E0E0E0;
+}
+
+.Checkout .Main .Schedule .Date {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #616161;
+}
+
+.Checkout .Main .Services {
+  width: 100%;
+  max-height: 12vh;
+  overflow-y: auto;
+}
+
+.Checkout .Main .Services .Service {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+
+.Checkout .Main .Services .Service:last-child {
+  margin-bottom: 0;
+}
+
+.Checkout .Main .Services .Service .Name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.35em;
+  color: #616161;
+}
+
+.Checkout .Main .Services .Service .Duration {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #A28282;
+}
+
+.Checkout .Main .Box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Checkout .Main .Box .Stats {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #616161;
+}
+
+.Checkout .Main .Box .Result {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: #616161;
+}
+
+.Checkout .Main .Card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  min-width: 100%;
+}
+
+.Checkout .Main .Card .Error {
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  text-align: center;
+  color: #ff5858;
+}
+
+.Checkout .Submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+}
+
+.Checkout .Submit .Terms {
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #616161;
+  margin-bottom: 0.5em;
+}
+
+.Checkout .Submit .Terms span {
+  text-decoration: underline;
+}
+
+.Checkout .Submit .Button {
+  border: none;
+  background: none;
+  width: 55%;
+  height: 3em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9em;
+  color: white;
+  background-color: #A28282;
+  border-radius: 25px;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.Checkout .Submit .Button:hover {
+  background-color: #8a6767;
+}
+
+@media (min-width: 720px) {
+  .Checkout {
+    font-size: 1.5em;
+  }
+  .Checkout .Submit .Button {
+    width: 45%;
+    border-radius: 35px;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Checkout {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=Checkout.module.css.map */

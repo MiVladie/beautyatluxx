@@ -1,0 +1,101 @@
+.Form {
+  width: 100%;
+  margin: 0.5em 0;
+  position: relative;
+}
+
+.Form .Modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Form .Input {
+  width: 90%;
+  margin: 0.75em 0;
+  padding: 0.75em 5%;
+  border: 1px solid #E1E1E1;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Form .Input .Field {
+  width: 100%;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.Form .Textarea {
+  min-height: 8em;
+  resize: none;
+}
+
+.Form .Result {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin: 1em 0 1.5em;
+  color: #444444;
+}
+
+.Form .Send {
+  width: 50%;
+  height: 3.25em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #A28282;
+  border-radius: 25px;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Form .Send:hover {
+  background-color: #8a6767;
+}
+
+@media (min-width: 720px) {
+  .Form .Send {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Form {
+    margin: 1em 0;
+  }
+  .Form .Input .Field {
+    font-size: 1.125em;
+  }
+  .Form .Result {
+    font-size: 1.1em;
+    margin: 1em 0 0 1em;
+  }
+  .Form .Send {
+    margin-top: 1.5em;
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=Form.module.css.map */

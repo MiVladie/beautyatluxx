@@ -1,0 +1,188 @@
+$eunry1: #D6BCBC;
+$eunry3: #A28282;
+$dark1: #444444;
+$dark2: #616161;
+
+.Details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    flex-direction: column;
+
+    .Main {
+        width: 100%;
+
+        .Meta {
+            width: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-bottom: 1.5em;
+
+            .Text {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.35em;
+
+                color: $dark1;
+            }
+        }
+
+        .Box {
+            width: 100%;
+            margin-bottom: 1em;
+
+            .Description {
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.9em;
+                font-weight: 300;
+
+                margin-bottom: 0.75em;
+                margin-left: 1em;
+
+                color: $dark2;                
+            }
+
+            .Input {
+                width: 90%;
+
+                margin: 0.5em 0;
+                padding: 0.5em 5%;
+
+                border: 1px solid #E1E1E1;
+                border-radius: 25px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .Field {
+                    width: 100%;
+
+                    border: none;
+                    
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300;
+                    font-size: 0.8em;
+                }
+            }
+            
+            .Options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .Option {
+                    width: 48%;
+                    height: 3.5em;
+
+                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+                    border-radius: 50px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.8em;
+                    font-weight: 300;
+                    color: #BEBEBE;
+
+                    cursor: pointer;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: rgb(243, 243, 243);
+                    }
+                }
+
+                .Selected {
+                    background-color: $eunry1;
+                    box-shadow: 0 0 6px rgba(214, 188, 188, 0.33);
+
+                    font-weight: 400;
+                    color: white;
+
+                    &:hover {
+                        background-color: $eunry1;
+                    }
+                }
+            }
+        }        
+    }
+
+    .Submit {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        text-align: center;
+
+        .Extra {
+            width: 80%;
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8em;
+            font-weight: 300;
+
+            color: $dark2;
+
+            margin-bottom: 0.5em;
+
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        .Button {
+            border: none;
+            background: none;
+
+            width: 55%;
+            height: 3em;
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9em;
+
+            color: white;
+            background-color: $eunry3;
+            border-radius: 25px;
+
+            transition: all 0.15s;
+
+            &:hover {
+                background-color: darken($eunry3, 10);
+            }
+
+            &:disabled {
+                background-color: rgb(231, 231, 231);
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Details {
+        font-size: 1.5em;
+
+        .Submit {
+            .Button {
+                width: 45%;
+                border-radius: 35px;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Details {
+        min-width: 25vw;
+        font-size: 1em;
+    }
+}

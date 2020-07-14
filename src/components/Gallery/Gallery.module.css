@@ -1,0 +1,180 @@
+.Gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.Gallery .Container {
+  width: 50%;
+  height: 50vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.Gallery .Container:hover .Image {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.Gallery .Container:hover .Zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 8%;
+}
+
+.Gallery .Container .Image {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-filter: brightness(0.85);
+          filter: brightness(0.85);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Gallery .Container .Zoom {
+  display: none;
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 23%;
+  height: 23%;
+  background-color: #D6BCBC;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.Gallery .Container .Zoom:hover {
+  background-color: #c39c9c;
+}
+
+.Gallery .Container .Zoom .Icon {
+  width: 33%;
+  height: 33%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Gallery .Modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 700;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Gallery .Modal .Wrapper {
+  position: relative;
+}
+
+.Gallery .Modal .Wrapper img {
+  max-width: 80vw;
+  max-height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+}
+
+.Gallery .Modal .Wrapper .Close {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -0.75em;
+  right: -0.75em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.Gallery .Modal .Wrapper .Close:hover {
+  background-color: #e6e6e6;
+}
+
+.Gallery .Modal .Wrapper .Close img {
+  width: 40%;
+  height: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 720px) {
+  .Gallery .Container .Zoom {
+    width: 15%;
+    height: 15%;
+  }
+  .Gallery .Modal .Wrapper .Close {
+    width: 2.5em;
+    height: 2.5em;
+    top: -1.25em;
+    right: -1.25em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Gallery .Container {
+    width: 25%;
+    height: 25vw;
+  }
+  .Gallery .Modal .Wrapper .Close {
+    width: 2em;
+    height: 2em;
+    top: -1em;
+    right: -1em;
+  }
+}
+/*# sourceMappingURL=Gallery.module.css.map */

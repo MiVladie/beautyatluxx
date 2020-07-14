@@ -1,0 +1,280 @@
+$eunry1: #D6BCBC;
+$eunry3: #A28282;
+$dark1: #444444;
+$dark2: #616161;
+
+.Schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    flex-direction: column;
+
+    .Main {
+        width: 100%;
+
+        .Month {
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .Text {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.35em;
+
+                color: $dark1;
+            }
+
+            .Previous, .Next {
+                background: none;
+                border: none;
+
+                width: 0.85em;
+                height: 0.85em;
+
+                background-image: url('../../../assets/icons/scroll.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                filter: brightness(0) invert(0.75);
+
+                transition: all 0.15s;
+
+                &:hover {                    
+                    filter: none;
+                }
+
+                &:disabled {
+                    visibility: hidden;
+                }
+            }
+
+            .Previous {
+                transform: rotateZ(90deg);
+            }
+            
+            .Next {
+                transform: rotateZ(-90deg);
+            }
+        }
+
+        .Days {
+            width: 95%;
+            margin: 1.25em auto 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .Day {
+                text-align: center;
+                position: relative;
+
+                .Name {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.7em;
+                    font-weight: 300;
+
+                    margin-bottom: 1em;
+
+                    color: $dark2;
+                }
+
+                .Number {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.25em;
+
+                    z-index: 600;
+                    position: relative;
+                    color: $dark1;
+                    
+                    width: 1.75em;
+                    height: 1.75em;
+
+                    display: block;
+
+                    text-align: center;
+                    line-height: 1.75em;
+                    border-radius: 50%;
+                    
+                    transition: all 0.15s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgb(243, 243, 243);
+                    }
+                }
+
+                .ActiveDay {
+                    background-color: $eunry1;
+                    color: white;
+
+                    &:hover {
+                        background-color: $eunry1;
+                    }
+                }
+
+            }
+        }
+
+        .Line {
+            width: 7em;
+            height: 1px;
+
+            margin: 0.75em auto 1em;
+
+            background-color: $eunry1;
+        }
+
+        .Options {
+            width: 100%;
+            margin: 0 auto 1.5em;
+
+            height: 30vh;
+            overflow-y: auto;
+
+            .Unavailable {
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .Text {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.15em;
+
+                    line-height: 1.5em;
+                    
+                    text-align: center;
+
+                    color: $dark1;
+                }
+            }
+
+            .Option {
+                height: 3em;
+
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+                border-radius: 30px;
+
+                margin: 0.5em 0;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                transition: all 0.15s;
+                
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(243, 243, 243);
+                }
+
+                .Time {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1em;
+                    font-weight: 300;
+
+                    margin-left: 1.5em;
+
+                    color: $dark1;
+                }
+
+                .Select {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.9em;
+                    font-weight: 300;
+
+                    color: #BEBEBE;
+
+                    margin-right: 1.25em;
+                }
+
+                .Tick {
+                    display: none;
+                }
+            }
+
+            .ActiveTime {
+                background-color: $eunry1;
+                box-shadow: 0 0 6px rgba(214, 188, 188, 0.33);
+                
+                &:hover {
+                    background-color: $eunry1;
+                }
+
+                .Time {
+                    font-weight: 400;
+                    color: white;
+                }
+
+                .Select {
+                    display: none;
+                }
+
+                .Tick {
+                    display: block;
+                    
+                    width: 1em;
+                    height: 1em;
+                    
+                    margin-right: 1.5em;
+
+                    background-image: url('../../../assets/icons/tick.png');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    .Submit {
+        border: none;
+        background: none;
+
+        width: 55%;
+        height: 3em;
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9em;
+
+        color: white;
+        background-color: $eunry3;
+        border-radius: 25px;
+
+        transition: all 0.15s;
+
+        &:hover {
+            background-color: darken($eunry3, 10);
+        }
+
+        &:disabled {
+            background-color: rgb(231, 231, 231);
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Schedule {
+        font-size: 1.5em;
+
+        .Submit {
+            width: 45%;
+            border-radius: 35px;
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Schedule {
+        font-size: 1em;
+    }
+}

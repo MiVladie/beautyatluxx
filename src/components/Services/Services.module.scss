@@ -1,0 +1,401 @@
+$grey: #444444;
+$eunry2: #6D0E2A;
+$eunry3: #A28282;
+$lightGrey2: #CFCFCF;
+
+.Services {
+    width: 100%;
+
+    .Categories {
+        width: 96vw;
+
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .Category {
+            min-width: 30vw;
+            min-height: 30vw;
+
+            margin-bottom: 2vw;
+
+            flex: 0 1;
+
+            background-color: white;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            cursor: pointer;
+
+            img {
+                width: 40%;
+                height: 40%;
+
+                object-fit: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                border-radius: 50%;
+            }
+
+            p {
+                margin-top: 1.25em;
+
+                font-family: 'Poppins', sans-serif;
+                font-size: 80%;
+
+                text-transform: uppercase;
+
+                color: $eunry2;
+            }
+        }
+        
+        .Active {
+            border: 2px solid $eunry3;
+            
+            min-width: calc(30vw - 4px);
+            min-height: calc(30vw - 4px);
+        }
+    }
+
+    .Types {
+        width: 96vw;
+
+        margin: 0 auto;
+        padding: 0.25em 0;
+
+        background-color: white;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+
+        transition: all 0.3s;
+
+        .Type {
+            width: 100%;
+            height: 2.75em;
+
+            background-color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: relative;
+
+            cursor: pointer;
+
+            transition: all 0.3s;
+            
+            .Name {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 0.9em;
+
+                color: $grey;
+                margin-left: 1em;
+                
+                transition: all 0.3s;
+            }
+
+            .Contain {
+                width: 1.25em;
+                height: 1.25em;
+
+                position: absolute;
+                right: 3em;
+                top: calc(50% - 1.25em / 2);
+
+                background-image: url('../../assets/icons/tickbox.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .Expand {
+                height: 1em;
+                width: 1em;
+
+                margin-right: 1em;
+
+                object-fit: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                transition: all 0.3s;
+            }
+
+            .ExpandOpen {
+                transform: rotateZ(180deg);
+            }
+        }
+
+        .Active {
+            width: calc(100% - 2px);
+            border-left: 2px solid $eunry3;
+
+            .Name {
+                margin-left: 1.5em;
+                color: $eunry3;
+            }
+        }
+    }
+
+    .Services {
+        width: 96vw;
+
+        margin: 0 auto;
+
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+        background-color: #F6F6F6;
+
+        padding: 0.5em 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        .Service {
+            width: 95%;
+
+            margin: 0 auto;
+            padding: 0.5em 0;
+
+            display: flex;
+            flex-flow: column;
+
+            transition: all 0.3s;
+            
+            cursor: pointer;
+
+            .Line {
+                width: 100%;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                .Name, .Price {
+                    font-size: 0.8em;    
+                    margin-bottom: 0.35em;
+                    color: $grey;
+                }
+
+                .Name {
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: left;
+                }
+
+                .Price {
+                    font-family: 'Poppins', sans-serif;
+                    text-align: right;
+                }
+
+                .Time {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.65em;
+                    text-align: left;
+                    color: $lightGrey2;
+                }
+
+                .Discount {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.65em;
+                    text-align: right;
+                    color: $eunry3;
+                }
+            }
+        }
+
+        .ActiveService {
+            width: calc(95% - 1em - 2px);
+            padding-left: 1em;
+            border-left: 2px solid $eunry3;
+
+            .Line {
+                .Name {
+                    color: $eunry3;
+                }
+            }
+        }
+
+        .Book {
+            width: 95%;
+            height: 3em;
+
+            margin: 0.5em auto 0;
+
+            background-color: #d3d3d3;
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8em;
+
+            text-align: center;
+            text-decoration: none;
+
+            line-height: 3em;
+            color: white;
+
+            cursor: pointer;
+            pointer-events: none;
+
+            transition: background-color 0.3s;
+        }
+
+        .ActiveBook {
+            background-color: $eunry3;
+            pointer-events: auto;
+
+            &:hover {
+                background-color: darken($eunry3, 10);
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Services {
+        width: 90vw;
+        margin: 0 auto;
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .Categories {
+            .Category {
+                min-width: 14vw;
+                min-height: 14vw;
+
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: #F6F6F6;
+                }
+            }
+
+            .Active {
+                min-width: calc(14vw - 4px);
+                min-height: calc(14vw - 4px);
+
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+
+        .Types {
+            width: 40%; 
+            margin: 0;
+
+            .Type {                   
+                &:hover {
+                    .Name {
+                        margin-left: 1.5em;
+                    }
+                }
+
+                .Contain {
+                    right: 1em;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+
+            .Active {
+                &:hover {
+                    .Name {
+                        margin-left: 1.25em;
+                    }
+                }
+
+                .Name {
+                    margin-left: 1.25em;
+                }
+            }
+        }
+
+        .Services {
+            width: 57.5%;
+
+            margin: 0;
+
+            justify-content: flex-start;
+
+            background-color: white;
+            
+            font-size: 1.2em; 
+
+            .Service {
+                width: 90%;
+                margin: 0;
+
+                &:hover {
+                    margin-left: 1em;
+                    width: calc(90% - 1em);
+                }
+            }
+
+            .ActiveService {
+                width: calc(90% - 1em - 2px);
+
+                &:hover {
+                    margin-left: 0;
+                    width: calc(90% - 1em - 2px);
+                }
+            }
+
+            .Book {
+                width: 40%;
+                height: 2.9em;
+
+                margin: 0.75em 0 0.25em;
+                
+                font-size: 0.7em;
+                line-height: 2.9em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Services {
+        width: 80vw;
+
+        .Categories {
+            .Category {
+                min-width: 11.5vw;
+                min-height: 11.5vw;
+
+                p {
+                    margin-top: 2.5em;
+                    font-size: 90%;
+                }
+            }
+            
+            .Active {
+                min-width: calc(11.5vw - 4px);
+                min-height: calc(11.5vw - 4px);
+            }
+        }
+
+        .Types {
+            .Type {
+                font-size: 1.05em;
+            }
+        }
+
+        .Services {
+            padding: 0.75em 0;
+
+            .Service {
+                font-size: 1.05em;
+            }
+        }
+    }
+}
