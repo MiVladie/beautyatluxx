@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { stripePublishableKey } from '../../assets/keys';
+import { STRIPE_PUBLISHABLE_KEY } from '../../config/constants';
 
 import Booking from '../../containers/Booking/Booking';
 
-import classes from './Services.module.css';
+import classes from './Services.module.scss';
 import { services, categories, types } from './availableServices';
 
 import { Elements } from '@stripe/react-stripe-js';
@@ -11,7 +11,7 @@ import { loadStripe } from '@stripe/stripe-js';
 
 import expand from '../../assets/icons/scroll.png';
 
-const stripePromise = loadStripe(stripePublishableKey);
+const stripePromise = loadStripe(STRIPE_PUBLISHABLE_KEY);
 
 const Services = () => {
     const [activeCategory, setActiveCategory] = useState(1);

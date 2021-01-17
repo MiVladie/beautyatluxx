@@ -2,10 +2,9 @@ import React from 'react';
 
 import messages_icon from '../../../assets/icons/messages.png';
 import appointments_icon from '../../../assets/icons/appointments.png';
-import refresh_icon from '../../../assets/icons/refresh.png';
 import close_icon from '../../../assets/icons/close.png';
 
-import classes from './Menu.module.css';
+import classes from './Menu.module.scss';
 
 const Menu = ({ select, close }) => {
     return (

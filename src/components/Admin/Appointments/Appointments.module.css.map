@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;EAEd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,aAAa,CAAC;IACV,KAAK,EAAE,IAAI;GACd;;;AAGL,MAAM,EAAE,SAAS,EAAE,MAAM;EACrB,AAAA,aAAa,CAAC;IACV,KAAK,EAAE,IAAI;GACd",
-    "sources": [
-        "Appointments.module.scss"
-    ],
-    "names": [],
-    "file": "Appointments.module.css"
-}

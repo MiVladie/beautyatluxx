@@ -2,7 +2,7 @@ import React from 'react';
 
 import { services } from '../../../Services/availableServices';
 
-import classes from './Preview.module.css';
+import classes from './Preview.module.scss';
 
 const preview = ({ appointments, expand, back }) => {
     const allAppointments = Object.keys(appointments)

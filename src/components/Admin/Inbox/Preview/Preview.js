@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Preview.module.css';
+import classes from './Preview.module.scss';
 
 const preview = ({ messages, expand, back }) => {    
     if(messages == null)

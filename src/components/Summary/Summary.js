@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Summary.module.css';
+import classes from './Summary.module.scss';
 
 const summary = () => {
     return (

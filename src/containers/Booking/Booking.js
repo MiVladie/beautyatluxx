@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { backendDomain } from '../../assets/keys';
+import { BACKEND_DOMAIN } from '../../config/constants';
 
 import Spinner from '../../components/UI/Spinner/Spinner';
 import Section from '../Section/Section';
@@ -9,7 +9,7 @@ import Details from '../../components/Booking/Details/Details';
 import Checkout from '../../components/Booking/Checkout/Checkout';
 import Success from '../../components/Booking/Success/Success';
 
-import classes from './Booking.module.css';
+import classes from './Booking.module.scss';
 
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 
@@ -41,7 +41,7 @@ const Booking = ({ services, closePanel }) => {
     const getSchedule = () => {
         setLoading(true);
 
-        axios.get(backendDomain + 'appointment/beautyatluxx/?id=' + services)
+        axios.get(BACKEND_DOMAIN + 'appointment/beautyatluxx/?id=' + services)
             .then(response => {
                 setSchedule(response.data.schedule);
                 setLoading(false);
@@ -70,7 +70,7 @@ const Booking = ({ services, closePanel }) => {
             };
 
             if (details.payment === 'card') {
-                const response = await axios.post(backendDomain + 'appointment/beautyatluxx/card', { appointment: appointment })
+                const response = await axios.post(BACKEND_DOMAIN + 'appointment/beautyatluxx/card', { appointment: appointment })
                 setClientSecret(response.data.clientSecret);
             }
 
@@ -118,7 +118,7 @@ const Booking = ({ services, closePanel }) => {
             try {
                 const appointment = { ...result };
 
-                await axios.post(backendDomain + 'appointment/beautyatluxx/venue', { appointment: appointment })
+                await axios.post(BACKEND_DOMAIN + 'appointment/beautyatluxx/venue', { appointment: appointment })
                 
                 setLoading(false);
                 setProcess('Success');

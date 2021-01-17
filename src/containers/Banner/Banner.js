@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import classes from './Banner.module.css';
+import classes from './Banner.module.scss';
 
 import banner_01 from '../../assets/images/banner_01.jpeg';
 import banner_02 from '../../assets/images/banner_02.jpeg';

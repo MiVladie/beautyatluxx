@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './About.module.css';
+import classes from './About.module.scss';
 
 import salon from '../../assets/images/salon.jpeg';
 import nails from '../../assets/icons/nails.png';

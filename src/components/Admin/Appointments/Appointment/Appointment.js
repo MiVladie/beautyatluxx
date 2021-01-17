@@ -2,7 +2,7 @@ import React from 'react';
 
 import { services } from '../../../Services/availableServices';
 
-import classes from './Appointment.module.css';
+import classes from './Appointment.module.scss';
 
 const appointment = ({ appointment, back, remove }) => {
     let name = appointment.client.name;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import classes from './Gallery.module.css';
+import classes from './Gallery.module.scss';
 
 import image1 from '../../assets/images/banner_01.jpeg';
 import image2 from '../../assets/images/image2.jpeg';

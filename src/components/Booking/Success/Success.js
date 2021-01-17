@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Success.module.css';
+import classes from './Success.module.scss';
 
 const Success = ({ success, email }) => {
     return (

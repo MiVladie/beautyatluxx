@@ -1,7 +1,7 @@
 import React from 'react';
 import './reset.css';
 
-import classes from './Layout.module.css';
+import classes from './Layout.module.scss';
 
 const layout = (props) => {
     return (

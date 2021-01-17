@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import classes from './Schedule.module.css';
+import classes from './Schedule.module.scss';
 
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const weekNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

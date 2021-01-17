@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { backendDomain } from '../../../assets/keys';
+import { BACKEND_DOMAIN } from '../../../config/constants';
 
 import Spinner from '../../UI/Spinner/Spinner';
 
-import classes from './Form.module.css';
+import classes from './Form.module.scss';
 
 const isEmailAddress = (str) => {
-    var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return pattern.test(str);
 }
 
-const Form = ({ submit }) => {
+const Form = () => {
     const [message, setMessage] = useState({ name: '', email: '', phone: '', message: '', time: '' });
     const [loading, setLoading] = useState(false);
     const [result, setResult] = useState();
@@ -30,7 +30,7 @@ const Form = ({ submit }) => {
             setResult('Please, provide a valid email address.');        
             setLoading(false);   
         } else {
-            axios.post(backendDomain + 'message/beautyatluxx', { message: message })
+            axios.post(BACKEND_DOMAIN + 'message/beautyatluxx', { message: message })
                 .then(response => {
                     setLoading(false);
                     setResult('Your message has been delivered.');

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import classes from './Navigation.module.css';
+import classes from './Navigation.module.scss';
 
 const Navigation = () => {
     const [expand, setExpand] = useState(false);

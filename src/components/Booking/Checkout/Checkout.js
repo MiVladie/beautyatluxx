@@ -3,7 +3,7 @@ import React from 'react';
 import Stripe from './Stripe/Stripe';
 import { services } from '../../Services/availableServices';
 
-import classes from './Checkout.module.css';
+import classes from './Checkout.module.scss';
 
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const weekNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

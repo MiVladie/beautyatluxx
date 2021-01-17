@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Admin from '../../containers/Admin/Admin';
 
 import logo from '../../assets/icons/logo.png';
-import classes from './Footer.module.css';
+import classes from './Footer.module.scss';
 
 const Footer = () => {
     const [admin, setAdmin] = useState(false);

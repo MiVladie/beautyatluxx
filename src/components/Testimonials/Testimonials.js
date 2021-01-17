@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import classes from './Testimonials.module.css';
+import classes from './Testimonials.module.scss';
 
 import arrow from '../../assets/icons/scroll.png';
 import star from '../../assets/icons/star.png';

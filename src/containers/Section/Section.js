@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Section.module.css';
+import classes from './Section.module.scss';
 
 const section = (props) => {
     return (

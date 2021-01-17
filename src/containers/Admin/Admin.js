@@ -6,7 +6,7 @@ import Menu from '../../components/Admin/Menu/Menu';
 import Inbox from '../../components/Admin/Inbox/Inbox';
 import Appointments from '../../components/Admin/Appointments/Appointments';
 
-import classes from './Admin.module.css';
+import classes from './Admin.module.scss';
 
 const Admin = ({ closePanel }) => {
     const [logged, setLogged] = useState(false);

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { backendDomain } from '../../../assets/keys';
+import { BACKEND_DOMAIN } from '../../../config/constants';
 
 import Appointment from './Appointment/Appointment';
 import Preview from './Preview/Preview';
 import Spinner from '../../UI/Spinner/Spinner';
 
-import classes from './Appointments.module.css';
+import classes from './Appointments.module.scss';
 
 const Appointments = ({ back }) => {
     const [appointments, setAppointments] = useState();
@@ -20,7 +20,7 @@ const Appointments = ({ back }) => {
     const fetchAppointments = () => {
         setLoading(true);
 
-        axios.get(backendDomain + 'admin/beautyatluxx/appointments', { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } })
+        axios.get(BACKEND_DOMAIN + 'admin/beautyatluxx/appointments', { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } })
             .then(response => {
                 setAppointments(response.data.appointments);
                 setLoading(false);
@@ -33,7 +33,7 @@ const Appointments = ({ back }) => {
     const deleteAppointment = () => {
         setLoading(true);
         
-        axios.delete(backendDomain + 'admin/beautyatluxx/appointments/' + key, { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } })
+        axios.delete(BACKEND_DOMAIN + 'admin/beautyatluxx/appointments/' + key, { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } })
             .then(response => {
                 setLoading(false);
                 setKey(null);

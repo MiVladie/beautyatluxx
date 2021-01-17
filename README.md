@@ -1,68 +1,108 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :cherry_blossom: About
 
-## Available Scripts
+Beauty at Luxx is a single page application build for a beauty salon with integrated booking system.
+
+Website preview:
+https://mivladie.github.io/beautyatluxx/
+
+# :memo: Table of Contents
+
+* [:memo: Table of Contents](#memo-table-of-contents)
+* [:rocket: Quick Start](#rocket-quick-start)
+	* [Step 1: Installing the dependencies](#step-1-installing-the-dependencies)
+	* [Step 2: Setting up configurations](#step-2-setting-up-configurations)
+	* [Step 3: Launching the server](#step-3-launching-the-server)
+* [:desktop_computer: Installation](#desktop_computer-installation)
+	* [NodeJS](#nodejs)
+* [:keyboard: Available Scripts](#keyboard-available-scripts)
+* [:green_book: Learn More](#green_book-learn-more)
+	* [ReactJS](#reactjs)
+	* [React Google Maps](#react-google-maps)
+    * [Stripe](#stripe)
+	* [Sass](#sass)
+
+# :rocket: Quick Start
+
+> You must have installed all of the software applications in the [installation](#desktop_computer-installation) section.
+
+Quick start guide to set the server up and running.
+
+## Step 1: Installing the dependencies
+
+### Run `npm install`
+
+Installs all of the necessary dependencies.
+
+## Step 2: Setting up configurations
+
+### Google Maps (optional)
+
+* Open `/src/config/constants.js` file;
+* Assign the API key to the `GOOGLE_MAPS_API_KEY` constant;
+* Save the file.
+
+### Stripe
+
+* Open `/src/config/constants.js` file;
+* Assign the Stripe publishable key to the `STRIPE_PUBLISHABLE_KEY` constant;
+* Save the file.
+
+## Step 3: Launching the server
+
+### Run `npm start`
+
+Starts the server in the development mode.
+
+# :desktop_computer: Installation
+
+In order to run the server, you must have installed all of the necessary software listed below.
+
+## NodeJS
+
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+* [Download](https://nodejs.org/en/)
+
+# :keyboard: Available Scripts
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs all of the necessary dependencies.
+
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in the development mode on port `:3000`.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `/build` folder.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# :green_book: Learn More
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+References to the packages used in the project.
 
-### `npm run eject`
+## ReactJS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+React is a JavaScript library for building user interfaces.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [Getting Started](https://reactjs.org/docs/getting-started.html)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## React Google Maps
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`react-google-maps` provides a set of React components wrapping the underlying Google Maps JavaScript API v3 instances.
 
-## Learn More
+* [Documentation](https://tomchentw.github.io/react-google-maps/#documentation)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Stripe
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Stripe is a technology company that builds economic infrastructure for the internet.
 
-### Code Splitting
+* [Documentation](https://stripe.com/docs)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Sass
 
-### Analyzing the Bundle Size
+Sass is a preprocessor scripting language that is interpreted or compiled into CSS.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* [Documentation](https://sass-lang.com/documentation)
