@@ -1,36 +1,42 @@
 {
-  "name": "beautyatluxx",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "dependencies": {
-    "@stripe/react-stripe-js": "^1.2.0",
-    "@stripe/stripe-js": "^1.11.0",
-    "axios": "^0.21.1",
-    "node-sass": "^4.14.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-google-maps": "^9.4.5",
-    "react-scripts": "^4.0.1"
-  }
+	"name": "beautyatluxx",
+	"version": "1.0.0",
+	"homepage": "https://mivladie.github.io/beautyatluxx/",
+	"private": true,
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"dependencies": {
+		"@stripe/react-stripe-js": "^1.16.1",
+		"@stripe/stripe-js": "^1.46.0",
+		"axios": "^1.2.1",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
+		"react-google-maps": "^9.4.5",
+		"react-scripts": "^5.0.1"
+	},
+	"devDependencies": {
+		"gh-pages": "^4.0.0",
+		"sass": "^1.56.2"
+	}
 }
