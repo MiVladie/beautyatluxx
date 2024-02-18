@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/beautyatluxx/static/css/main.34a495fb.css",
-    "main.js": "/beautyatluxx/static/js/main.f20bf376.js",
+    "main.js": "/beautyatluxx/static/js/main.12191101.js",
     "static/media/salon.jpeg": "/beautyatluxx/static/media/salon.c46be70a4438a03e69f6.jpeg",
     "static/media/image4.jpeg": "/beautyatluxx/static/media/image4.0f2ee943715d9ef1cd42.jpeg",
     "static/media/image3.jpeg": "/beautyatluxx/static/media/image3.819ed8d20c57a5807585.jpeg",
@@ -19,10 +19,10 @@
     "static/media/tickbox.png": "/beautyatluxx/static/media/tickbox.9a1e6383151f83127133.png",
     "index.html": "/beautyatluxx/index.html",
     "main.34a495fb.css.map": "/beautyatluxx/static/css/main.34a495fb.css.map",
-    "main.f20bf376.js.map": "/beautyatluxx/static/js/main.f20bf376.js.map"
+    "main.12191101.js.map": "/beautyatluxx/static/js/main.12191101.js.map"
   },
   "entrypoints": [
     "static/css/main.34a495fb.css",
-    "static/js/main.f20bf376.js"
+    "static/js/main.12191101.js"
   ]
 }
